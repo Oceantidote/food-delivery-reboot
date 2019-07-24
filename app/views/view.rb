@@ -1,9 +1,11 @@
 class View
 
   def display_meals(meals)
+    puts "MENU"
     meals.each do |meal|
       puts "#{meal.id} - #{meal.name} - £#{meal.price}"
     end
+    puts "-----"
   end
 
   def display_customers(customers)

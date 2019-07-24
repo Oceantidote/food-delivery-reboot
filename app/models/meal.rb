@@ -8,5 +8,13 @@ class Meal
     @id = attributes[:id]
   end
 
+  def to_csv_row
+    [@id,@name,@price]
+  end
+
+  def self.headers
+    %w(id name price)
+  end
+
 
 end
